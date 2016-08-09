@@ -3,9 +3,21 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/Teal_600</item>
+        <item name="colorPrimaryDark">@color/Teal_700</item>
+        <item name="colorAccent">@color/Pink_200</item>
+        <!--<item name="android:textColorPrimary">@color/Cyan_50</item>-->
+        <item name="android:colorBackground">@color/Teal_200</item>
+        <item name="android:buttonStyle">@style/BeatBoxButton</item>
+    </style>
+
+    <style name="BeatBoxButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@color/Red_50</item>
+        <item name="android:background">@drawable/button_beat_box</item>
+    </style>
+
+    <style name="BeatBoxButton.Strong" parent="BeatBoxButton">
+        <item name="android:textStyle">bold|italic</item>
     </style>
 
 </resources>
